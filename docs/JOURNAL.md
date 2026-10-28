@@ -35,7 +35,7 @@ The roadmap this tracks lives in [`PLAN.md`](PLAN.md).
 - 512GB NVMe confirmed blank-of-value (old Windows install, approved for wipe).
 - Ubuntu 22.04 written to a 29GB USB stick with Rufus.
 - Secure Boot obstacle resolved; GRUB and the Ubuntu installer reached.
-- Ubuntu installed alongside the existing Windows drive (chosen at boot via F12).
+- Ubuntu installed on its own dedicated SSD; the Windows drive stays untouched and the OS is chosen at boot (F12).
 
 **Blocked**
 - First boot failed with UEFI `Verification failed (0x10A) Security Violation`. Cause: Rufus ISO mode used an unsigned UEFI:NTFS helper because the ISO has a >4GB casper file, and Secure Boot rejects unsigned loaders. Fix: disable Secure Boot in BIOS (and remember to click *Apply* before exiting — Dell silently discards it otherwise).

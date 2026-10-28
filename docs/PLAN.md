@@ -23,11 +23,11 @@ The dated record of what actually happened lives in [`JOURNAL.md`](JOURNAL.md).
 
 - [x] GitHub repo `robotics-journey`
 - [x] Ubuntu 22.04 on dedicated SSD + VS Code + Git
-- [ ] Python 3.11+, NumPy, Matplotlib, OpenCV
+- [ ] Python 3.10, NumPy, Matplotlib, OpenCV — 22.04's default; ROS 2 Humble targets 3.10 and the cached wheels are cp310
 - [ ] ROS 2 Humble + Gazebo Classic + RViz
 - [ ] Docker
 - [ ] CAD: Onshape (browser, free) or FreeCAD
-- [ ] Keep 60GB+ free on SSD. 16GB RAM is enough. No Isaac Sim (needs RTX).
+- [x] Keep 60GB+ free on SSD — 512GB drive, ~328GB free at install. 16GB RAM is enough. No Isaac Sim (needs RTX).
 
 ## 2. Phase 1: Foundations (Month 0–4)
 

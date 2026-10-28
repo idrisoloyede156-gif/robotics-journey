@@ -27,6 +27,15 @@ Documenting a full-time run at robotics engineering: mechatronics final year, si
 
 Rule of thumb: **plan = where I'm going, journal = where I've been.** Project-level READMEs and demo videos are the proof.
 
+## Repo maintenance
+
+This repo is the single source of truth, kept aligned by rule:
+
+- `docs/PLAN.md` is strategy. It changes only when the approach changes.
+- `docs/JOURNAL.md` is the record. Append-only, newest first, one entry per session/week with **Done / Demo / Blocked / Next / Hours**.
+- The status table above is the one-screen truth and is updated in the same commit as any journal entry.
+- No invented progress: if it isn't confirmed done, it goes under *Next*, not *Done*.
+
 ## Tooling
 
 - `tavily_helper.py` — `robotics_search()` / `robotics_extract()` via `tavily-python` (needs `TAVILY_API_KEY`).
