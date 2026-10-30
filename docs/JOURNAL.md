@@ -2,7 +2,49 @@
 
 Append-only record of what actually happened. Newest entry first.
 One entry per work session or week: **Done / Demo / Blocked / Next / Hours**.
-The roadmap this tracks lives in [`PLAN.md`](PLAN.md).
+The roadmap this tracks lives in [`robotics-learning-plan.md`](../robotics-learning-plan.md).
+
+---
+
+## 2026-10-30 — Handoff to the Ubuntu side; clone still pending
+
+**Done**
+- Handoff model agreed: the Ubuntu session is the daily workbench coach, this repo is the continuity, and Windows is for strategy/alignment checks.
+- Plan copy staged on the external drive for the Ubuntu side.
+
+**Demo** — none.
+
+**Blocked**
+- The repo has **not** been cloned on Ubuntu yet: no commits since 2026-10-28, no `week01/` directory. Git authentication was the sticking point.
+- Reminder to self: do not copy the local plan over the repo copy — that would create two divergent plans and reintroduce machine-specific details into a public repo.
+
+**Next**
+- Clone the repo on Ubuntu, read this journal's top entry, then start Week 1.
+
+**Hours** — not tracked.
+
+---
+
+## 2026-10-29 — Online install session: environment complete
+
+**Done**
+- ROS 2 Humble verified with `talker` / `listener`.
+- Gazebo 11.10.2 verified.
+- colcon full stack (22 extensions) verified.
+- NumPy pinned to the ROS-safe 1.21.5 after removing a user-level 2.2.6 that would break `cv_bridge`; OpenCV 5.0.0 and pyserial working.
+- Docker CE installed; `docker run hello-world` succeeded after re-login (docker group).
+- Offline cache topped up with `setuptools` 84.2.1 and `wheel` 0.48.0.
+
+**Demo** — `talker`/`listener` and Docker hello-world terminal output.
+
+**Blocked**
+- `esptool` offline install still failed: pip's build isolation asks for `setuptools>=64` and `--no-index` propagates into that subprocess. Cache fix staged; final install not yet confirmed.
+- KiCad 8 was part of the install batch but was not individually verified in the captured output.
+
+**Next**
+- Install esptool from the topped-up cache, then Week 1: `week01/kinematics_2d.py` (2-link FK + 12-pose plot) and the Wokwi ESP32 sim.
+
+**Hours** — not tracked.
 
 ---
 

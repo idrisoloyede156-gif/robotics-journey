@@ -8,7 +8,9 @@
 > **Environment:** dedicated Ubuntu 22.04 SSD (no Windows on it) + offline toolkit cache on external drive
 
 This is the roadmap. It changes when the strategy changes — not every week.
-The dated record of what actually happened lives in [`JOURNAL.md`](JOURNAL.md).
+The dated record of what actually happened lives in [`docs/JOURNAL.md`](docs/JOURNAL.md).
+
+> **Public copy.** Keep machine-specific details (usernames, drive letters, exact hardware IDs) out of this file — they belong in the local Windows working copy.
 
 ---
 
@@ -23,9 +25,10 @@ The dated record of what actually happened lives in [`JOURNAL.md`](JOURNAL.md).
 
 - [x] GitHub repo `robotics-journey`
 - [x] Ubuntu 22.04 on dedicated SSD + VS Code + Git
-- [ ] Python 3.10, NumPy, Matplotlib, OpenCV — 22.04's default; ROS 2 Humble targets 3.10 and the cached wheels are cp310
-- [ ] ROS 2 Humble + Gazebo Classic + RViz
-- [ ] Docker
+- [x] Python 3.10, NumPy 1.21.5, OpenCV 5.0.0, pyserial — 22.04's default; ROS 2 Humble targets 3.10
+- [ ] matplotlib — needed for the Week 1 kinematics plot; not installed by the setup script
+- [x] ROS 2 Humble + Gazebo 11.10.2 + RViz — talker/listener verified
+- [x] Docker — `hello-world` verified
 - [ ] CAD: Onshape (browser, free) or FreeCAD
 - [x] Keep 60GB+ free on SSD — 512GB drive, ~328GB free at install. 16GB RAM is enough. No Isaac Sim (needs RTX).
 
@@ -159,7 +162,8 @@ Minimal moving-robot BoM: ~$35–45 over 3 months = ESP32 + chassis + L298N + HC
 
 ## 8. 12-Week Sim-First Checklist
 
-- [ ] Wk 1–2: ROS2 Humble + Git. Python kinematics plot.
+- [x] Wk 1–2 environment: ROS 2 Humble + Gazebo + Git
+- [ ] Wk 1–2 build: Python kinematics plot
 - [ ] Wk 3–5: ROS nodes/topics/services/launch/URDF. Gazebo diff-drive teleop video.
 - [ ] Wk 6–8: PID + slam_toolbox + Nav2 warehouse run. ESP32 blink + sensor read.
 - [ ] Wk 9–10: OpenCV + ROS camera detection. Dockerize sim.
