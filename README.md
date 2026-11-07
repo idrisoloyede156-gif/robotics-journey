@@ -32,6 +32,9 @@ Read the plan for direction, read the journal's top entry for where the last ses
 | [robotics-learning-plan.md](robotics-learning-plan.md) | The roadmap: phases, thesis, hardware budget, 12-week checklist, skills matrix. Changes only when strategy changes. |
 | [docs/JOURNAL.md](docs/JOURNAL.md) | The documentation: dated, append-only log of what was actually done, blocked, and next. Updated every session. |
 | [docs_THESIS_RESEARCH.md](docs_THESIS_RESEARCH.md) | Thesis literature/engineering research, 11 sources. |
+| [docs_THESIS_RESEARCH_PRO.md](docs_THESIS_RESEARCH_PRO.md) | Pro-model thesis research: build guidance + pitfalls, 26 sources. |
+| [docs_THESIS_VALIDATION.md](docs_THESIS_VALIDATION.md) | Thesis validation: 5 questions (legitimacy, prior work, gap, feasibility, defensibility), 12 sources. Verdict: GO with measurement conditions. |
+| [docs/EXPERIMENT_DESIGN.md](docs/EXPERIMENT_DESIGN.md) | Chapter 4 measurement rig: hypotheses H1–H3, metric table, T0–T5 scripts, 6-month walk order. |
 | [scripts/SETUP-DAY.sh](scripts/SETUP-DAY.sh) | Offline Ubuntu setup + the one-shot online install block (ROS 2, Gazebo, Docker, KiCad, Python wheels). |
 
 Rule of thumb: **plan = where I'm going, journal = where I've been.** Project-level READMEs and demo videos are the proof.

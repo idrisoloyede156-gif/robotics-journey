@@ -6,6 +6,26 @@ The roadmap this tracks lives in [`robotics-learning-plan.md`](../robotics-learn
 
 ---
 
+## 2026-11-08 — Thesis validated; experiment design drafted (Windows/strategy side)
+
+**Done**
+- Ran Tavily pro research on the thesis as a five-question validation (legitimacy, prior work, gap, feasibility, defensibility) → [docs_THESIS_VALIDATION.md](../docs_THESIS_VALIDATION.md), 12 sources. Verdict: legitimate, novel (no published ESP32-class SROS2/XRCE-DDS overhead numbers found), feasible, defensible with a measured before/after table.
+- Projection of the cited evidence: SROS2/DDS-Security enforcement is agent(laptop)-side; the micro-ROS client on ESP32 has partial XRCE-DDS security support. Thesis must scope claims this way — treat the boundary as a contribution.
+- Drafted the measurement rig for Chapter 4 → [docs/EXPERIMENT_DESIGN.md](EXPERIMENT_DESIGN.md): hypotheses H1–H3, metric table (RT latency, one-way, loss, jitter, traffic overhead vs Raven-II 0.24% reference, MCU CPU/heap, discovery time, telemetry Hz), scripts T0–T5, phase plan A (sim) → B (ESP32 bench) → C (car), safety/ethics, 6-month walk order.
+
+**Demo** — none yet (Phase A rig is next).
+
+**Blocked**
+- Repo not yet cloned on Ubuntu side (still pending from 2026-10-30) — the experiment scripts live in this repo, so the Ubuntu session needs the clone plus the offline toolkit before Phase A.
+
+**Next**
+- Ubuntu side: clone repo, read this journal entry, then Phase A = sim rig up, script T0 (version lock) + T1 (attack repro in sim).
+- Windows/strategy side: monitor for review, keep research artifacts coming.
+
+**Hours** — not tracked.
+
+---
+
 ## 2026-10-30 — Handoff to the Ubuntu side; clone still pending
 
 **Done**
